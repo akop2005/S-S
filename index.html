@@ -4,10 +4,26 @@
     <title>Sleep&Study</title>
     <link rel="icon" type="image/x-icon" href="S&S.ico">
     <style>
-      .myClass {
-        background-image: "mainpage.jpg";
-        opacity: 0.4;
-      }
+      .cloud {
+position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cloud::before {    
+      content: "";
+      background-image: mainpage.jpg;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.3;
+}
     </style>
 </head>
 <body>
